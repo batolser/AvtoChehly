@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/slyle.css">
+</head>
+<body>
+    <div id="root">
+        <div class="w-100">
+            <div class="top d-flex mx-auto justify-content-start">
+                <div class="d-flex align-items-center top__item">
+                    <img class="top__icon" src="./images/car.svg" alt="car"/>
+                    <a class="top__Link" href="#">Доставка и оплата</a>
+                </div>
+                <div class="d-flex align-items-center top__item">
+                <img class="top__icon" src="./images/map.svg" alt="map"/>
+                    <a class="top__Link" href="#">г. Набережные Челны, Машиностроительная ул., 91</a>
+                </div>
+                
+                <button type="button" class="btn btn__wrapper"><div class="btn__gradient"></div><p class="btn__text">Заказать звонок</p></button>
+                
+            </div>
+            <div class="main__section d-flex mx-auto">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container menu__container flex-wrap">
+                        <a class="navbar-brand" href="#">
+                            <img src="./images/logo.png" class="d-inline-block algin-center" alt="logo" />
+                        </a>
+                        
+                        <form class="search__form ">
+                            <input type="text" placeholder="Поиск по модели авто" class="search__input" />
+                            <img src="./images/search.svg" class="search__icon d-inline-block algin-center" alt="search" />
+                        </form>
+                        <div class="nav__contacts d-flex flex-column">
+                            <a class="conctact__text" href="tel:+78552409167">8 (8552) 40-91-67</a>
+                            <a class="conctact__text" href="tel:+78552409166">+7 (8552) 40-91-66</a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown"  id="navbarNavDropdown">
+                            <ul class="menu navbar-nav mr-auto">
+                                <li class="nav-item menu__link active">
+                                    <a class="nav-link dropdown-toggle menu__link" href="#">Модельный ряд</a>   
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__link" href="#">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__link" href="#">Галерея</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__link" href="#">Доставка и оплата</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link menu__link" href="#">Контакты</a>
+                                </li>
+                            </ul>
+            
+                               
+                        </div>
+
+                    </div>
+                    
+                </nav>
+                <div class="banner d-flex w-100 justify-content-between">
+                    <div class="banner__info d-flex flex-column">
+                        <h5 class="banner__subtitle">Акция!</h5>
+                        <h5 class="banner__subtitle">Успей купить по старой цене</h5>
+                        <h3 class="title">Avto-Коврики</h3>
+                        <div class="d-flex banner__price">
+                            <p class="price__title">3 000 ₽</p>
+                            <p class="price__title">2 500 ₽</p>
+                        </div>
+                        <p class="banner__text">До конца акции осталось:</p>
+                        <div class="banner__timer d-flex justify-content-between">
+                            <div class="banner__timer banner__timer_item d-flex justify-content-between">
+                                <span class="banner__timer banner__timer_span d-flex justify-content-center align-items-center">0</span>
+                                <span class="banner__timer banner__timer_span d-flex justify-content-center align-items-center">4</span>
+                            </div>
+                            <div class="banner__timer banner__timer_item d-flex justify-content-between">
+                                <span class="banner__timer banner__timer_span d-flex justify-content-center align-items-center">5</span>
+                                <span class="banner__timer banner__timer_span d-flex justify-content-center align-items-center">6</span>
+                            </div>
+                            <div class="banner__timer banner__timer_item d-flex justify-content-between">
+                                <span class="banner__timer banner__timer_span d-flex justify-content-center align-items-center">0</span>
+                                <span class="banner__timer banner__timer_span d-flex justify-content-center align-items-center">1</span>
+                            </div>
+                        </div>
+                        <div class="banner__timer banner__timer_wrapper d-flex justify-content-between">
+                            <p class="banner__timer banner__timer_text text-center">часов</p>
+                            <p class="banner__timer banner__timer_text text-center">минут</p>
+                            <p class="banner__timer banner__timer_text text-center">секунд</p>
+                        </div>
+                        <button class="btn main__btn">Заказать со скидкой</button>
+                    </div>
+                    <div class="banner__illustration d-flex flex-column">
+                        <img src="images/bannerPic1.png" class="d-inline-block algin-center" alt="banner"/>
+                        <div class="sale d-flex justify-content-center">
+                            <img src="images/percent.svg" class="sale__percent d-inline-block algin-center" alt="banner" />
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="options d-flex mx-auto">
+                <div class="options__bg w-100 "></div>
+                    <div class="options__columns w-100 d-flex justify-content-between">
+                        <div class="options__column d-flex flex-column">
+                            <h5 class="options__column options__column_title d-flex flex-column">Быстрая доставка <br/>по всей России</h5>
+                            <div class="options__column options__column_item d-flex">
+                                <div class="marker d-flex justify-content-center">
+                                    <p class="marker__text">1</p>
+                                </div>
+                                <p class="options__column options__column_text">Подключение <br/>и настройка кассы</p>  
+                            </div>
+                        </div>
+
+                        <div class="options__column d-flex flex-column">
+                            <h5 class="options__column options__column_title d-flex flex-column">Лучшая цена<br/> на Avto-коврики</h5>
+                            <div class="options__column options__column_item d-flex">
+                                <div class="marker d-flex justify-content-center">
+                                    <p class="marker__text">2</p>
+                                </div>
+                                <p class="options__column options__column_text">Мы гарантируем <br/>лучшую цену</p>  
+                            </div>
+                        </div>
+
+                        <div class="options__column d-flex flex-column">
+                            <h5 class="options__column options__column_title d-flex flex-column">Гарантии <br/>качества и сервиса</h5>
+                            <div class="options__column options__column_item d-flex">
+                                <div class="marker d-flex justify-content-center">
+                                    <p class="marker__text">3</p>
+                                </div>
+                                <p class="options__column options__column_text">Самое современное оборудование</p>  
+                            </div>
+                        </div>
+
+                        <div class="options__column d-flex flex-column">
+                            <h5 class="options__column options__column_title d-flex flex-column">Индивидуальное подтверждение</h5>
+                            <div class="options__column options__column_item d-flex">
+                                <div class="marker d-flex justify-content-center">
+                                    <p class="marker__text">4</p>
+                                </div>
+                                <p class="options__column options__column_text">Каждый заказ обрабатывается менеджером</p>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="order d-flex w-100 flex-column ">
+                <h3 class="main__title text-center">Быстрый заказ Avto-ковриков</h3>
+                 <p class="order__subtitle">Выберите свое Авто</p>
+                <form class="order__form"> 
+                    <div class="form-row justify-content-between">
+
+
+                        <select class="form-control choose__option" name="cars" id="cars">
+                            <option value="0" selected>Выберите марку</option>
+                            <option value="VAZ" >ВАЗ</option>
+                            <option value="AUDI">AUDI</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Changan">Changan</option>
+                            <option value="CHERY">Chery</option>
+                            <option value="CHEVROLET">CHEVROLET</option>
+                            <option value="CITROEN">CITROEN</option>
+                            <option value="DAEWOO">Daewoo</option>
+                            <option value="DODGE">DODGE</option>
+                            <option value="FERRARI">DongFeng</option>
+                            <option value="FAW">FAW</option>
+                            <option value="FIAT">FIAT</option>
+                            <option value="FORD">FORD</option>
+                            <option value="GEELY">Gelly</option>
+                            <option value="HAVAL">HAVAL</option>
+                            <option value="HONDA">HONDA</option>
+                            <option value="HOVER">HOVER</option>
+                            <option value="HYUNDAI">HYUNDAI</option>
+                            <option value="LEXUS">LEXUS</option>
+                            <option value="LIFAN">Lifan</option>
+                            <option value="MAZDA">MAZDA</option>
+                            <option value="Mersedes">Mersedes</option>
+                            <option value="MITSUBISHI">MITSUBISHI</option>
+                            <option value="NISSAN">NISSAN</option>
+                            <option value="OPEL">OPEL</option>
+                            <option value="PEUGEOT">PEUGEOT</option>
+                            <option value="Porshe">Porshe</option>
+                            <option value="RENAULT">RENAULT</option>
+                            <option value="SEAT">SEAT</option>
+                            <option value="SKODA">SKODA</option>
+                            <option value="Ssang Yong">Ssang Yong</option>
+                            <option value="SUBARU">SUBARU</option>
+                            <option value="Suzuki">Suzuki</option>
+                            <option value="TOYOTA">TOYOTA</option>
+                            <option value="VOLKSWAGEN">VOLKSWAGEN</option>
+                            <option value="VOLVO">VOLVO</option>
+                            <option value="Zotye">Zotye</option>
+                    </select>
+                    
+                    
+                    <select class="form-control choose__option"  name="model" id="model">
+                    </select>
+                    
+                    <select class="form-control choose__option"  name="modification" id="modification">
+                    </select>
+
+
+                       
+                    </div>
+                    <div class="form-row justify-content-between">
+                <div class="col">
+                    <img src="./images/Gallery.png" fluid />
+                </div>
+
+
+                 <div class="choose__bg col">
+
+                        <div class="row">
+                          <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+
+                            
+                            <a class="list-group-item list-group-item-action active" id="list-rhombuses-list" data-toggle="list" href="#list-rhombuses" role="tab" aria-controls="rhombuses">
+                                <div class="d-flex choose__item">
+                                    <img src="./images/rhombuses.png" class="choose__material" />
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action" id="list-honeycomb-list" data-toggle="list" href="#list-honeycomb" role="tab" aria-controls="honeycomb">
+                                <div class="d-flex choose__item">
+                                    <img src="./images/honeycomb.png" class="choose__material" />
+                                </div>
+                            </a>
+
+                            <div class="d-flex w-100 justify-content-between list-group__options">
+                                 <p class="choose__text text-center">Ромб</p>
+                                <p class="choose__text text-center">Сота</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-rhombuses" role="tabpanel" aria-labelledby="list-rhombuses-list">
+                                <div class="choose__color col">
+                                    <p class="choose__text">цвет материала</p>
+                                    
+                                        <div class="d-flex flex-wrap choose__list" id="rhombuses-material-color">
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-1" value="rhombuses-material-color-1" aria-label="...">  
+                                                
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-2" value="rhombuses-material-color-2" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-3" value="rhombuses-material-color-3" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-4" value="rhombuses-material-color-4" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-5" value="rhombuses-material-color-5" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-6" value="rhombuses-material-color-6" aria-label="...">   
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-7" value="rhombuses-material-color-7" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-8" value="rhombuses-material-color-8" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-9" value="rhombuses-material-color-9" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-10" value="rhombuses-material-color-10" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-11" value="rhombuses-material-color-11" aria-label="...">   
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-12" value="rhombuses-material-color-12" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-13" value="rhombuses-material-color-13" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="rhombuses-material-color-14" value="rhombuses-material-color-14" aria-label="...">
+                                            </div>
+                                            
+
+                                        </div>
+                                  
+                
+                                 </div>
+             
+                                 <div class="choose__color col" >
+                                    <p class="choose__text">цвет окантовки</p>
+                                    <div class="d-flex flex-wrap choose__list" id="rhombuses-border-color">
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-1" value="rhombuses-border-color-1" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-2" value="rhombuses-border-color-2" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-3" value="rhombuses-border-color-3" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-4" value="rhombuses-border-color-4" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-5" value="rhombuses-border-color-5" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-6" value="rhombuses-border-color-6" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-7" value="rhombuses-border-color-7" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-8" value="rhombuses-border-color-8" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-9" value="rhombuses-border-color-9" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-10" value="rhombuses-border-color-10" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-11" value="rhombuses-border-color-11" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-12" value="rhombuses-border-color-12" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-13" value="rhombuses-border-color-13" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-14" value="rhombuses-border-color-14" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="rhombuses-border-color-15" value="rhombuses-border-color-15" aria-label="...">
+                                        </div>
+                                        
+                                   </div>
+                                    
+                  
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="list-honeycomb" role="tabpanel" aria-labelledby="list-honeycomb-list">
+                                <div class="choose__color col">
+                                    <p class="choose__text">цвет материала</p>
+                                        <div class="d-flex flex-wrap choose__list" id="honeycomb-material-color">
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="honeycomb-material-color-1" value="honeycomb-material-color-1" aria-label="...">   
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="honeycomb-material-color-2" value="honeycomb-material-color-2" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="honeycomb-material-color-3" value="honeycomb-material-color-3" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="honeycomb-material-color-4" value="honeycomb-material-color-4" aria-label="...">
+                                            </div>
+                                            <div class="form-check form-check-inline choose__sm">
+                                                <input class="form-check-input" type="radio" name="materialColor" id="honeycomb-material-color-5" value="honeycomb-material-color-5" aria-label="...">
+                                            </div>
+
+                                        </div>
+                                   
+                
+                                 </div>
+             
+                                 <div class="choose__color col" >
+                                    <p class="choose__text">цвет окантовки</p>
+                                    <div class="d-flex flex-wrap choose__list" id="honeycomb-border-color">
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-1" value="honeycomb-border-color-1" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-2" value="honeycomb-border-color-2" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-3" value="honeycomb-border-color-3" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-4" value="honeycomb-border-color-4" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-5" value="honeycomb-border-color-5" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-6" value="honeycomb-border-color-6" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-7" value="honeycomb-border-color-7" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-8" value="honeycomb-border-color-8" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-9" value="honeycomb-border-color-9" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-10" value="honeycomb-border-color-10" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-11" value="honeycomb-border-color-11" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-12" value="honeycomb-border-color-12" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-13" value="honeycomb-border-color-13" aria-label="...">
+                                            
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-14" value="honeycomb-border-color-14" aria-label="...">
+                                        </div>
+                                        <div class="form-check form-check-inline choose__sm">
+                                            <input class="form-check-input" type="radio" name="borderColor" id="honeycomb-border-color-15" value="honeycomb-border-color-15" aria-label="...">
+                                        </div>
+                                        
+                                   </div>
+                  
+                                </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+              
+                     
+ 
+                    <div class="additionally d-flex justify-content-between">
+                        <div class="form-check__froup">
+                            <div class="d-flex form-check additionally__check">
+                                    <input class="form-check-input checkbox" type="checkbox" id="shildik" value="shildik" checked>
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        ШИЛЬДИК
+                                    </label>
+
+                                </div>
+                                <div class="d-flex">
+                                    <button class="add__btn" id="shildik+"></button>
+                                    <p class="add__text" id="shildik-amount">150 ₽</p>
+                                    <button class="add__btn" id="shildik-"></button>
+                                </div>
+                        </div>
+
+                        <div class="d-flex form-check additionally__check">
+                            <input class="form-check-input checkbox" type="checkbox" id="jumper" value="jumper">
+                            <label class="form-check-label" for="defaultCheck1">
+                                ПЕРЕМЫЧКА
+                            </label>
+                        </div>
+
+                       
+                        
+                    </div>
+ 
+                    
+ 
+
+                    <div class="form-group choose_avto" >
+                        <div class="d-flex form-check additionally__check">
+                            <input class="form-check-input checkbox" type="checkbox" id="thrust-bearing" value="thrust bearing">
+                            <label class="form-check-label" for="defaultCheck1">
+                                подпятник
+                            </label>
+                        </div>
+                        <div class="d-flex ">
+                            <p class="add__text" id="thrust-bearing-amount">500 ₽</p>
+                        </div>
+                    </div>
+ 
+                    <div class="d-flex result result__main">
+                        <div class="col">
+                            <p class="price__text price__text_lg">Комплект ковриков</p>
+                            <p class="price__title result__title" id="order-amount">2 500 ₽</p>
+                            <p class="price__text">сумма заказа</p>
+                            <p class="price__text price__text_collapse">
+                                <u><a class="price__text" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Купить по отдельности
+                                  </a></u>
+                            </p>
+                            
+                        </div>
+                         
+                        <div class="col d-flex justify-content-end">
+                             <button type="submit" class="main__btn" id="buy__btn">КУПИТЬ</button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex result">
+                        <div class="collapse more" id="collapseExample">
+                                <div class="form-check__froup">
+                                    <div class="form-group choose_avto d-flex">
+                                        <div class="d-flex form-check additionally__check">
+                                            <input class="form-check-input checkbox" type="checkbox" id="driver" value="driver">
+                                            <label class="form-check-label" for="driver">
+                                                Водительский коврик
+                                            </label>
+                                        </div>
+                                        <div class="d-flex ">
+                                            <p class="add__text add__text_collapse" id="driver-amount">820 ₽</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group choose_avto d-flex">
+                                        <div class="d-flex form-check additionally__check">
+                                            <input class="form-check-input checkbox" type="checkbox" id="passenger" value="passenger">
+                                            <label class="form-check-label" for="passenger">
+                                                Пассажирский коврик
+                                            </label>
+                                        </div>
+                                        <div class="d-flex ">
+                                            <p class="add__text add__text_collapse" id="passenger-amount">820 ₽</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group choose_avto d-flex">
+                                        <div class="d-flex form-check additionally__check">
+                                            <input class="form-check-input checkbox" type="checkbox" id="back" value="back">
+                                            <label class="form-check-label" for="back">
+                                                Комплект задних ковриков
+                                            </label>
+                                        </div>
+                                        <div class="d-flex ">
+                                            <p class="add__text add__text_collapse" id="back-amount">820 ₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        
+                    </div>
+                   
+                    </div>
+                </div>
+                </form>
+             </div>
+
+            <section class="d-flex w-100 justify-content-center section__bg ">
+                <div class="col choice__col">
+                     <h3 class="main__title main__title_gray main__title_choice text-center">Выберите марку своего авто</h3>
+                     <div class=" d-flex flex-wrap row choice__gallery justify-content-center">
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/logo_auto-28 1.svg" class="" alt="marks"/>
+                            </a>
+                            
+                        </div>
+                
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/logo_auto-32 1.svg" class="" alt="marks"/>
+                            </a>
+                            
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/Daewoo-logo-058F288C41-seeklogo.com 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/Ford-logo-1D4EE96C29-seeklogo 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/honda-silver-logo-E810C6A8A4-seeklogo 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/logo 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/logo_auto-09 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/000 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/Nissan-logo-4B3C580C8A-seeklogo 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/toyota-logo-239F6C9C1A-seeklogo 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/Volkswagen-logo-FAE94F013E-seeklogo 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        <div class="col choice__gallery choice__gallery_col">
+                            <a class="d-flex align-items-center" href="#" >
+                                <img src="./images/logo_100x100 1.svg" class="" alt="marks"/>
+                            </a>
+                        </div>
+                        
+                     </div>
+                     <div class="row justify-content-center ">
+                        <button class="choice__btn">ВСЕ МАРКИ</button>
+                    </div>
+                     
+                </div>
+            </section>
+            <section class="d-flex w-100 justify-content-center">
+                <div class="col popular__col">
+                     <h3 class="main__title main__title_gray text-center">Популярные товары</h3>
+                    
+                    <div class="justify-content-center popular__wrapper">
+                        <div id="popular__carousel" class="carousel slide" data-ride="carousel" interval={null} fade={true} wrap={false}>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active d-flex justify-content-between">
+                                    <div class="card card__col d-flex justify-content-end" >
+                                        <img class="card-img-top card__img" src="./images/Car.png" alt="pic1" />
+                                        <div class="card-body card__body">
+                                            <h5 class="card-title price__title price__title_light">2 500 ₽</h5>
+                                            <p class="card-text price__subtitle">КОМПЛЕКТ</p>
+                                            <p class="card-text price__subtitle price__subtitle_l">Avto-Коврики</p>
+                                            <p class="card-text price__subtitle price__subtitle_s">Acura CDX 2016-2020</p>
+                                            <button class="card__btn">Заказать</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card card__col d-flex justify-content-end" >
+                                        <img class="card-img-top card__img" src="./images/Car.png" alt="pic1" />
+                                        <div class="card-body card__body">
+                                            <h5 class="card-title price__title price__title_light">2 500 ₽</h5>
+                                            <p class="card-text price__subtitle">КОМПЛЕКТ</p>
+                                            <p class="card-text price__subtitle price__subtitle_l">Avto-Коврики</p>
+                                            <p class="card-text price__subtitle price__subtitle_s">Acura CDX 2016-2020</p>
+                                            <button class="card__btn">Заказать</button>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="card card__col d-flex justify-content-end" >
+                                        <img class="card-img-top card__img" src="./images/Car.png" alt="pic1" />
+                                        <div class="card-body card__body">
+                                            <h5 class="card-title price__title price__title_light">2 500 ₽</h5>
+                                            <p class="card-text price__subtitle">КОМПЛЕКТ</p>
+                                            <p class="card-text price__subtitle price__subtitle_l">Avto-Коврики</p>
+                                            <p class="card-text price__subtitle price__subtitle_s">Acura CDX 2016-2020</p>
+                                            <button class="card__btn">Заказать</button>
+                                        </div>
+                                    </div>
+                                    <div class="card card__col d-flex justify-content-end" >
+                                        <img class="card-img-top card__img" src="./images/Car.png" alt="pic1" />
+                                        <div class="card-body card__body">
+                                            <h5 class="card-title price__title price__title_light">2 500 ₽</h5>
+                                            <p class="card-text price__subtitle">КОМПЛЕКТ</p>
+                                            <p class="card-text price__subtitle price__subtitle_l">Avto-Коврики</p>
+                                            <p class="card-text price__subtitle price__subtitle_s">Acura CDX 2016-2020</p>
+                                            <button class="card__btn">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                 
+                        </div>
+                    </div>
+                     
+                </div>
+            </section>
+
+
+            <section class="d-flex w-100 justify-content-center review__section section__bg" >
+                <div class="col review__col ">
+                      <h3 class="main__title main__title_gray text-center main__title_review">Отзывы наших покупателей</h3>
+                        <div class="d-flex justify-content-between review__row card-group" >
+                             
+                            <div class="card review__card d-flex">
+                                <div class="d-flex card-img review__video">
+                                    <img class="card-img" src="./images/video1.png" alt="pic1" />
+                                    <img class="icon__play" src="./images/Youtube-logo-2017 1.svg" alt="pic1" />
+                                    <p class="video__text">Ресторан «Бабушка приехала»</p>
+                                </div>
+                                
+                                <div class="card-body review__body">
+                                    <h5 class="review__title">Игорь Усенков</h5>
+                                    <p class="review__date">25.02.2021</p>
+                                    <p class="review__subtitle">Эти идеи можно &nbsp;</p>
+                                    <p class="review__subtitle">адаптировать для авто &nbsp;</p>
+                                    <p class="review__text">Все смеялись над моими ковриками раньше, теперь я покупаю автоковрики в Челнах...</p>
+                                </div>
+                            </div>
+                             
+                            <div class="card review__card d-flex">
+                                <div class="d-flex card-img review__video">
+                                    <img class="card-img" src="./images/video1.png" alt="pic1" />
+                                    <img class="icon__play" src="./images/Youtube-logo-2017 1.svg" alt="pic1" />
+                                    <p class="video__text">Ресторан «Бабушка приехала»</p>
+                                </div>
+                                
+                                <div class="card-body review__body">
+                                    <h5 class="review__title">Игорь Усенков</h5>
+                                    <p class="review__date">25.02.2021</p>
+                                    <p class="review__subtitle">Эти идеи можно &nbsp;</p>
+                                    <p class="review__subtitle">адаптировать для авто &nbsp;</p>
+                                    <p class="review__text">Все смеялись над моими ковриками раньше, теперь я покупаю автоковрики в Челнах...</p>
+                                </div>
+                            </div>
+                            <div class="card review__card d-flex">
+                                <div class="d-flex card-img review__video">
+                                    <img class="card-img" src="./images/video1.png" alt="pic1" />
+                                    <img class="icon__play" src="./images/Youtube-logo-2017 1.svg" alt="pic1" />
+                                    <p class="video__text">Ресторан «Бабушка приехала»</p>
+                                </div>
+                                
+                                <div class="card-body review__body">
+                                    <h5 class="review__title">Игорь Усенков</h5>
+                                    <p class="review__date">25.02.2021</p>
+                                    <p class="review__subtitle">Эти идеи можно &nbsp;</p>
+                                    <p class="review__subtitle">адаптировать для авто &nbsp;</p>
+                                    <p class="review__text">Все смеялись над моими ковриками раньше, теперь я покупаю автоковрики в Челнах...</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section class="justify-content-center portfolio__section">
+                <h3 class="main__title main__title_gray main__title_portfolio">Наши работы</h3>
+                <div class="justify-content-center">
+                    <div id="portfolio__carousel" class="portfolio__carousel carousel slide" data-ride="carousel" interval={null} fade={true} wrap={false}>
+                        <div class="carousel-inner">
+                            <div class="portfolio__item carousel-item active row row-cols-3 d-flex justify-content-between  ">
+                                <div class="card col portfolio__card">
+                                    <div class="card-img-overlay justify-content-end">
+                                        <h5 class="card-title hover__title">EVA-коврики</h5>
+                                        <p class="card-text hover__text">коврики с приятной текстурой</p>
+                                        <a class="hover__next" href="#s" role="button">
+                                            <img class="img-fluid hover__icon" src="./images/hover__icon.svg" alt="computer"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card col portfolio__card">
+                                    <div class="card-img-overlay justify-content-end">
+                                        <h5 class="card-title hover__title">EVA-коврики</h5>
+                                        <p class="card-text hover__text">коврики с приятной текстурой</p>
+                                        <a class="hover__next" href="#s" role="button">
+                                            <img class="img-fluid hover__icon" src="./images/hover__icon.svg" alt="computer"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card col portfolio__card">
+                                    <div class="card-img-overlay justify-content-end">
+                                        <h5 class="card-title hover__title">EVA-коврики</h5>
+                                        <p class="card-text hover__text">коврики с приятной текстурой</p>
+                                        <a class="hover__next" href="#s" role="button">
+                                            <img class="img-fluid hover__icon" src="./images/hover__icon.svg" alt="computer"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card col portfolio__card">
+                                    <div class="card-img-overlay justify-content-end">
+                                        <h5 class="card-title hover__title">EVA-коврики</h5>
+                                        <p class="card-text hover__text">коврики с приятной текстурой</p>
+                                        <a class="hover__next" href="#s" role="button">
+                                            <img class="img-fluid hover__icon" src="./images/hover__icon.svg" alt="computer"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card col portfolio__card">
+                                    <div class="card-img-overlay justify-content-end">
+                                        <h5 class="card-title hover__title">EVA-коврики</h5>
+                                        <p class="card-text hover__text">коврики с приятной текстурой</p>
+                                        <a class="hover__next" href="#s" role="button">
+                                            <img class="img-fluid hover__icon" src="./images/hover__icon.svg" alt="computer"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card col portfolio__card">
+                                    <div class="card-img-overlay justify-content-end">
+                                        <h5 class="card-title hover__title">EVA-коврики</h5>
+                                        <p class="card-text hover__text">коврики с приятной текстурой</p>
+                                        <a class="hover__next" href="#s" role="button">
+                                            <img class="img-fluid hover__icon" src="./images/hover__icon.svg" alt="computer"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                  
+                <div class="row d-flex justify-content-center video__wrapper">
+                    <img class="img-fluid" src="./images/comp.png" alt="computer"/>
+                    <div class="portfolio__video portfolio__video_gardient"></div>
+                    <img class="portfolio__video img-fluid" src="./images/videoPic.png" alt="computer"/>
+                    <h5 class="portfolio__video portfolio__video_title text-center">Видео </br>о товаре</h5>
+                    <button class="btn main__btn portfolio__video portfolio__video_btn" data-target="#">СМОТРЕТЬ</button>
+                <div>
+                  
+            </section>
+
+            <section  class="d-flex w-100 justify-content-center section__bg">
+                <div class="application__row d-flex justify-content-between">
+                    <div class="application__col col">
+                             <h3 class="main__title main__title_gray main__title_application">Просто заполните эту заявку</h3>
+                             <ul class="list-group application application__list">
+                                <li class="list-group-item d-flex application__list application__list_item"><img class="application__icon" src="./images/item1.svg" alt="" /><p class="application__list application__list_text">Заполните заявку на этой странице. В течение 5 минут на электронную почту придёт письмо с номером вашего счёта для заказа коврика</p></li>
+                                <li class="list-group-item d-flex application__list application__list_item"><img class="application__icon" src="./images/item2.svg" alt="" /><p class="application__list application__list_text">Перейдите по ссылке из письма и оплатите нужную сумму</p></li>
+                                <li class="list-group-item d-flex application__list application__list_item"><img class="application__icon" src="./images/item3.svg" alt="" /><p class="application__list application__list_text">Дождитесь звонка от менеджера банка. Он уточнит детали и согласует ваш заказ</p></li>
+                             </ul>
+                             <div class="strip"></div>
+                             <div class="strip"></div>
+                    </div>
+                    <div class="form__col col">
+                        <h4 class="application__subtitle  text-center">Заполнить заявку</h4>
+                        <form class="container__form">
+                            <div class="form-group">
+                                <input type="text" class="form__input form-control" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form__input form-control" placeholder="Мобильный телефон">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form__input form-control" placeholder="Электронная почта">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form__input form-control" placeholder="Город">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form__input form-control" placeholder="Дополнительная информация*">
+                            </div>
+                            <div class="d-flex form__accept justify-content-between">
+                                <p class="form__accept form__accept_text">Отправляя заявку, я принимаю <span class="form__accept form__accept_text form__accept_span">условия передачи информации</span></p>
+                                <button type="submit" class="btn main__btn main__btn_sm">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>  
+            </section>
+
+            <footer class="d-flex w-100 justify-content-center section__bg">    
+                <div class="d-flex justify-content-between row row-cols-2 footer__row">
+                    <div class="footer__col col">
+                        <h4 class="footer__title">AvtoChehly</h4>
+                        <p>Современные коврики для прекрасных авто</p>
+                        <div class="d-flex footer__wrapper">
+                            <ul class="list-group footer__list ">
+                                <li class="list-group-item footer__list footer__item" action href="#link1">О компании</li>
+                                <li class="list-group-item footer__list footer__item" action href="#link1">Галерея</li>
+                                <li class="list-group-item footer__list footer__item" action href="#link1">Заказать</li>
+                                <li class="list-group-item footer__list footer__item" action href="#link1">Доставка и оплата</li>
+                                <li class="list-group-item footer__list footer__item" action href="#link1">Контакты</li>
+                            </ul>
+                            <ul class="list-group footer__list">
+                                <li class="list-group-item footer__list footer__item" action href="#link1">Видео</li>
+                            </ul>
+                        </div>
+                        <a href="#link1"><p>Витрина</p></a>
+                        <div class="row footer__links footer__links_sm">
+                            <a class="footer__text" href="#">О продукте</a>
+                            <p>・</p>
+                            <a class="footer__text" href="#">Что нового?</a>
+                            <a class="footer__text" href="#"> Вопросы и ответы</a>
+                        </div>
+                      
+                    </div>
+                    <div class="footer__col col">
+                        <div class="footer__app">
+                            <p class="" >Социальные сети</p>
+                            <div class="d-flex footer__app footer__app_links">
+                                <a class="footer__social" href="#">
+                                    <img class="img-fluid" src="./images/Facebook_in.svg" alt="computer"/>
+                                </a>
+                                <a class="footer__social" href="#">
+                                    <img class="img-fluid" src="./images/VK_in.svg" alt="computer"/>
+                                </a>
+                                <a class="footer__social" href="#">
+                                    <img class="img-fluid" src="./images/OK_in.svg" alt="computer"/>
+                                </a>
+                                <a class="footer__social" href="#">
+                                    <img class="img-fluid" src="./images/Twitter_in.svg" alt="computer"/>
+                                </a>
+                                
+                            </div> 
+                            <p class="" >Приложения</p>
+                            <div class="d-flex footer__app footer__app_links">
+                                <a class="" href="#">
+                                    <img class="img-fluid" src="./images/Cashback_in.svg" alt="computer"/>
+                                </a>
+                                <div class="cashback__col col">
+                                    <p class="cashback__text" >AvtoChehly cashback</p>
+                                    <a class="cashback__link" href="#">Скачать</a>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="row footer__links">
+                            <a class="footer__text" href="#">Контакты</a>
+                            <p>・</p>
+                            <a class="footer__text" href="#">Раскрытие информации</a>
+                            <p>・</p>
+                            <a class="footer__text" href="#">Документы ПАО CHHLY</a>
+                            <a class="footer__text" href="#">Политика обработки cookies</a>
+                            <p>・</p>
+                            <a class="footer__text" href="#">Комплаенс и деловая этика</a>
+                            
+                        </div>
+                        <p class="footer__text copyright">&#169; 2021 ПАО «АВТОЧЕХЛЫ» Все права защищены</p>
+
+                    </div>
+                </div>
+                
+            </footer>
+
+           
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</body>
+</html>
